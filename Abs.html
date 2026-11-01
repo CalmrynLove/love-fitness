@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Fitness - Abs Workouts</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GOOGLE TRANSLATE -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+<header class="fade-in">
+    <img src="media/logo.png" alt="Love Fitness Logo" class="logo">
+    <h1>Abs Workouts</h1>
+    <p>Build core strength and stability.</p>
+    <button id="settingsBtn" class="settings-btn">⚙ Settings</button>
+</header>
+
+<nav aria-label="Main Navigation" class="fade-in">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="abs.html">Abs</a></li>
+        <li><a href="back.html">Back</a></li>
+        <li><a href="legs.html">Legs</a></li>
+        <li><a href="arms.html">Arms</a></li>
+        <li><a href="chest.html">Chest</a></li>
+        <li><a href="products.html">Products</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section class="muscle-description fade-in">
+    <h2>What are your ABS?</h2>
+    <p>
+        The abdominal muscles are a key part of your core, helping stabilize your body during movement,
+        protect your spine, and support posture. Your abs include the rectus abdominis, obliques, and
+        transverse abdominis — all working together to provide strength, balance, and control. Training
+        your abs improves stability, reduces injury risk, and enhances performance in nearly every
+        exercise.
+    </p>
+</section>
+
+<section class="exercise-section slide-up">
+    <h2>Core Exercises</h2>
+    <p id="absIntro">Follow these exercises to strengthen your core and improve stability.</p>
+
+    <div class="grid">
+
+        <article class="exercise-card zoom-in">
+            <img src="media/crunches.jpg"
+                alt="Crunches exercise demonstration">
+            <h3>Crunches</h3>
+            <p><strong>Target:</strong> Upper abs</p>
+            <p><strong>How to do it:</strong> Lift your shoulders off the ground and squeeze your core.</p>
+            <p><strong>Tips:</strong> Avoid pulling your neck forward.</p>
+        </article>
+
+        <article class="exercise-card zoom-in">
+            <img src="media/plank.jpg"
+                alt="Plank exercise demonstration">
+            <h3>Plank</h3>
+            <p><strong>Target:</strong> Entire core</p>
+            <p><strong>How to do it:</strong> Hold a straight body position on elbows and toes.</p>
+            <p><strong>Tips:</strong> Keep hips level and avoid sagging.</p>
+        </article>
+
+        <article class="exercise-card zoom-in">
+            <img src="media/legraise.jpg"
+                alt="Leg raise exercise demonstration">
+            <h3>Leg Raises</h3>
+            <p><strong>Target:</strong> Lower abs</p>
+            <p><strong>How to do it:</strong> Lift your legs upward while keeping them straight.</p>
+            <p><strong>Tips:</strong> Keep your lower back pressed into the floor.</p>
+        </article>
+
+    </div>
+</section>
+
+</main>
+
+<div id="settingsPopup" class="settings-popup hidden">
+    <div class="settings-content zoom-in">
+        <h2>Settings</h2>
+
+        <h3>Text-to-Speech</h3>
+        <button class="tts-btn" onclick="speakText('Text to speech is active.')">
+            🔊 Test TTS
+        </button>
+
+        <label for="ttsRate">Speech Speed</label>
+        <input type="range" id="ttsRate" min="0.5" max="2" step="0.1" value="1">
+
+        <label for="ttsPitch">Speech Pitch</label>
+        <input type="range" id="ttsPitch" min="0" max="2" step="0.1" value="1">
+
+        <button class="tts-btn" onclick="readPage()">
+            📄 Read Entire Page
+        </button>
+
+        <h3>Display Settings</h3>
+        <button class="tts-btn" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+        <h3>Translate Page</h3>
+        <div id="google_translate_element"></div>
+
+        <h3>Future Settings</h3>
+        <p>More features coming soon...</p>
+
+        <button id="closeSettings" class="close-btn">Close</button>
+    </div>
+</div>
+
+<footer class="fade-in">
+    <p>© 2026 Love Fitness — All Rights Reserved</p>
+    <p class="legal-note">This website provides general fitness information and is not medical advice.</p>
+
+    <div class="footer-links">
+        <a href="termsofuse.html">Terms of Use</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+</footer>
+
+</body>
+</html>

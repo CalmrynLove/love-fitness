@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Fitness - Chest Workouts</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+<header class="fade-in">
+    <img src="media/logo.png" alt="Love Fitness Logo" class="logo">
+
+    <h1>Chest Workouts</h1>
+    <p>Build upper-body pushing strength and power.</p>
+
+    <button id="settingsBtn" class="settings-btn">
+        ⚙ Settings
+    </button>
+</header>
+
+<nav aria-label="Main Navigation" class="fade-in">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="abs.html">Abs</a></li>
+        <li><a href="back.html">Back</a></li>
+        <li><a href="legs.html">Legs</a></li>
+        <li><a href="arms.html">Arms</a></li>
+        <li><a href="chest.html">Chest</a></li>
+        <li><a href="products.html">Products</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section class="muscle-description fade-in">
+    <h2>What is Your Chest?</h2>
+
+    <p>
+        The chest is mainly made up of the pectoral muscles, which play an
+        important role in pushing movements. Strong chest muscles improve upper-body
+        strength, support shoulder stability, and help with exercises such as push-ups,
+        bench presses, and chest flys.
+    </p>
+</section>
+
+<section class="exercise-section slide-up">
+
+    <h2>Chest Exercises</h2>
+
+    <p>
+        These exercises target the chest muscles to help build strength,
+        muscle size, and pushing power.
+    </p>
+
+    <div class="grid">
+
+        <article class="exercise-card zoom-in">
+            <img src="media/benchpress.jpg"
+                alt="Bench press exercise demonstration">
+
+            <h3>Bench Press</h3>
+
+            <p><strong>Target:</strong> Chest, shoulders, and triceps</p>
+
+            <p>
+                <strong>How to do it:</strong>
+                Press the bar upward from your chest until your arms are extended.
+            </p>
+
+            <p>
+                <strong>Tips:</strong>
+                Keep your feet firmly planted and avoid bouncing the bar.
+            </p>
+        </article>
+
+        <article class="exercise-card zoom-in">
+            <img src="media/pushup.jpg"
+                alt="Push-up exercise demonstration">
+
+
+            <h3>Push-Up</h3>
+
+            <p><strong>Target:</strong> Chest, shoulders, and triceps</p>
+
+            <p>
+                <strong>How to do it:</strong>
+                Lower your body toward the floor and push back up.
+            </p>
+
+            <p>
+                <strong>Tips:</strong>
+                Keep your body in a straight line throughout the movement.
+            </p>
+        </article>
+
+        <article class="exercise-card zoom-in">
+            <img src="media/chestfly.jpg"
+                alt="Chest fly exercise demonstration">
+
+            <h3>Chest Fly</h3>
+
+            <p><strong>Target:</strong> Chest</p>
+
+            <p>
+                <strong>How to do it:</strong>
+                Bring the weights together in an arc motion above your chest.
+            </p>
+
+            <p>
+                <strong>Tips:</strong>
+                Maintain a slight bend in your elbows throughout the exercise.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+<div id="settingsPopup" class="settings-popup hidden">
+    <div class="settings-content zoom-in">
+
+        <h2>Settings</h2>
+
+        <h3>Text-to-Speech</h3>
+
+        <button class="tts-btn"
+                onclick="speakText('Text to speech is active.')">
+            🔊 Test TTS
+        </button>
+
+        <label for="ttsRate">Speech Speed</label>
+
+        <input
+            type="range"
+            id="ttsRate"
+            min="0.5"
+            max="2"
+            step="0.1"
+            value="1"
+        >
+
+        <label for="ttsPitch">Speech Pitch</label>
+
+        <input
+            type="range"
+            id="ttsPitch"
+            min="0"
+            max="2"
+            step="0.1"
+            value="1"
+        >
+
+        <button class="tts-btn" onclick="readPage()">
+            📄 Read Entire Page
+        </button>
+
+        <h3>Display Settings</h3>
+
+        <button class="tts-btn" onclick="toggleDarkMode()">
+            🌙 Toggle Dark Mode
+        </button>
+
+        <h3>Translate Page</h3>
+
+        <div id="google_translate_element"></div>
+
+        <h3>Future Settings</h3>
+
+        <p>More features coming soon...</p>
+
+        <button id="closeSettings" class="close-btn">
+            Close
+        </button>
+
+    </div>
+</div>
+
+<footer class="fade-in">
+    <p>© 2026 Love Fitness — All Rights Reserved</p>
+
+    <p class="legal-note">
+        This website provides general fitness information and is not medical advice.
+    </p>
+
+    <div class="footer-links">
+        <a href="termsofuse.html">Terms of Use</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+</footer>
+
+</body>
+</html>

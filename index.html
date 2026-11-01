@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Fitness - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GOOGLE TRANSLATE -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+<header class="fade-in">
+    <img src="media/logo.png" alt="Love Fitness Logo" class="logo">
+    <h1>Love Fitness</h1>
+    <p>Stronger training just a click away.</p>
+    <button id="settingsBtn" class="settings-btn">⚙ Settings</button>
+</header>
+
+<nav aria-label="Main Navigation" class="fade-in">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="abs.html">Abs</a></li>
+        <li><a href="back.html">Back</a></li>
+        <li><a href="legs.html">Legs</a></li>
+        <li><a href="arms.html">Arms</a></li>
+        <li><a href="chest.html">Chest</a></li>
+        <li><a href="products.html">Products</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section class="hero fade-in">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h2>Start Your Fitness Journey</h2>
+        <p>Learn proper form, explore workouts, and grow stronger every day.</p>
+        <button class="cta zoom-in">Explore Workouts</button>
+    </div>
+</section>
+
+<section class="why-love-fitness slide-up">
+    <h2>Why Love Fitness?</h2>
+    <p id="whyText">
+        Love Fitness helps beginners build confidence, learn proper form, and explore safe, effective workouts.
+    </p>
+
+    <div class="grid">
+        <article class="card fade-in">
+            <h3>Beginner Friendly</h3>
+            <p>Clear demonstrations and simple explanations make it easy to start your fitness journey.</p>
+        </article>
+
+        <article class="card fade-in">
+            <h3>Proper Form</h3>
+            <p>Learn how to perform exercises safely with step-by-step guidance.</p>
+        </article>
+
+        <article class="card fade-in">
+            <h3>Affordable Products</h3>
+            <p>Access budget-friendly fitness essentials without feeling overwhelmed.</p>
+        </article>
+    </div>
+</section>
+
+<section class="featured-exercise zoom-in">
+    <h2>Featured Exercise of the Week</h2>
+
+    <div class="card">
+        <img src="media/plank.jpg"
+     alt="Plank hold exercise demonstration">
+        <h3>Plank Hold</h3>
+        <p>Build full-core stability with this simple but powerful movement.</p>
+        <button class="cta">Learn More</button>
+    </div>
+</section>
+
+<section class="beginner-tips slide-up">
+    <h2>Beginner Tips</h2>
+    <ul>
+        <li>Start slow and focus on form.</li>
+        <li>Warm up before every workout.</li>
+        <li>Don’t compare yourself to others.</li>
+        <li>Consistency beats intensity.</li>
+        <li>Use lighter weights until confident.</li>
+    </ul>
+</section>
+
+<section class="categories fade-in">
+    <h2>Workout Categories</h2>
+
+    <div class="grid">
+
+        <article class="card zoom-in">
+            <a href="abs.html">
+                <img src="media/abs.jpg" alt="Abdominal muscles workout">
+            </a>
+            <h3>Abs</h3>
+            <p>Core strength & stability.</p>
+        </article>
+
+        <article class="card zoom-in">
+            <a href="back.html">
+                <img src="media/back.jpg" alt="Back muscles workout">
+            </a>
+            <h3>Back</h3>
+            <p>Posture & pulling power.</p>
+        </article>
+
+        <article class="card zoom-in">
+            <a href="legs.html">
+                <img src="media/leg.jpg" alt="Leg exercise workout">
+            </a>
+            <h3>Legs</h3>
+            <p>Lower body strength.</p>
+        </article>
+
+        <article class="card zoom-in">
+            <a href="arms.html">
+                <img src="media/arm.jpg" alt="Arm exercise workout">
+            </a>
+            <h3>Arms</h3>
+            <p>Biceps & triceps training.</p>
+        </article>
+
+        <article class="card zoom-in">
+            <a href="chest.html">
+                <img src="media/chest.jpg" alt="Chest exercise workout">
+            </a>
+            <h3>Chest</h3>
+            <p>Push strength & power.</p>
+        </article>
+
+    </div>
+</section>
+
+<section class="products-preview zoom-in">
+    <h2>Fitness Essentials</h2>
+
+    <div class="grid">
+        <article class="card fade-in">
+            <img src="media/yogamat.jpg"
+     alt="Yoga mat for exercise and stretching">
+            <h3>Yoga Mat</h3>
+            <p>Perfect for home workouts.</p>
+        </article>
+
+        <article class="card fade-in">
+            <img src="media/resistanceband.jpg"
+     alt="Resistance bands fitness equipment">
+            <h3>Resistance Bands</h3>
+            <p>Great for beginner strength training.</p>
+        </article>
+    </div>
+
+    <button class="cta zoom-in" onclick="location.href='products.html'">
+        View All Products
+    </button>
+</section>
+
+<section class="interactive slide-up">
+    <h2>Disclaimer</h2>
+
+    <button id="toggleInfo">Show More Info</button>
+    <p id="extraInfo" class="hidden">
+         Love Fitness provides general fitness information for educational purposes only.
+         This website does not collect personal health data and does not provide medical,
+         nutritional, or professional fitness advice.
+         Always consult a qualified healthcare provider before beginning any exercise routine.
+         Love Fitness is not responsible for injuries or health issues resulting from the use
+         of information on this site.
+    </p>
+</section>
+
+</main>
+
+<div id="settingsPopup" class="settings-popup hidden">
+    <div class="settings-content zoom-in">
+        <h2>Settings</h2>
+
+        <h3>Text-to-Speech</h3>
+        <button class="tts-btn" onclick="speakText('Text to speech is active.')">
+            🔊 Test TTS
+        </button>
+
+        <label for="ttsRate">Speech Speed</label>
+        <input type="range" id="ttsRate" min="0.5" max="2" step="0.1" value="1">
+
+        <label for="ttsPitch">Speech Pitch</label>
+        <input type="range" id="ttsPitch" min="0" max="2" step="0.1" value="1">
+
+        <button class="tts-btn" onclick="readPage()">
+            📄 Read Entire Page
+        </button>
+
+        <h3>Display Settings</h3>
+        <button class="tts-btn" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+        <h3>Translate Page</h3>
+        <div id="google_translate_element"></div>
+
+        <h3>Future Settings</h3>
+        <p>More features coming soon...</p>
+
+        <button id="closeSettings" class="close-btn">Close</button>
+    </div>
+</div>
+
+<footer class="fade-in">
+    <p>© 2026 Love Fitness — All Rights Reserved</p>
+    <p class="legal-note">This website provides general fitness information and is not medical advice.</p>
+
+    <div class="footer-links">
+        <a href="termsofuse.html">Terms of Use</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+</footer>
+
+</body>
+</html>

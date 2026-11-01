@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Fitness - Back Workouts</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+<header class="fade-in">
+    <img src="media/logo.png" alt="Love Fitness Logo" class="logo">
+
+    <h1>Back Workouts</h1>
+    <p>Build strength, posture, and pulling power.</p>
+
+    <button id="settingsBtn" class="settings-btn">
+        ⚙ Settings
+    </button>
+</header>
+
+<nav aria-label="Main Navigation" class="fade-in">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="abs.html">Abs</a></li>
+        <li><a href="back.html">Back</a></li>
+        <li><a href="legs.html">Legs</a></li>
+        <li><a href="arms.html">Arms</a></li>
+        <li><a href="chest.html">Chest</a></li>
+        <li><a href="products.html">Products</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section class="muscle-description fade-in">
+    <h2>What is Your Back?</h2>
+
+    <p>
+        The back is made up of several important muscles including the latissimus
+        dorsi, trapezius, rhomboids, and erector spinae. These muscles help you
+        maintain good posture, support the spine, and perform pulling movements.
+        Training your back improves overall strength, stability, and athletic
+        performance while reducing the risk of injury.
+    </p>
+</section>
+
+<section class="exercise-section slide-up">
+
+    <h2>Back Exercises</h2>
+
+    <p>
+        These exercises target different areas of the back to help build strength,
+        stability, and better posture.
+    </p>
+
+    <div class="grid">
+
+        <article class="exercise-card zoom-in">
+            <img src="media/latpull.jpg"
+                alt="Lat pulldown exercise demonstration">
+
+            <h3>Lat Pulldown</h3>
+
+            <p><strong>Target:</strong> Latissimus dorsi (lats)</p>
+
+            <p>
+                <strong>How to do it:</strong>
+                Pull the bar down toward your upper chest while keeping your back straight.
+            </p>
+
+            <p>
+                <strong>Tips:</strong>
+                Avoid swinging your body and focus on pulling with your back muscles.
+            </p>
+        </article>
+
+        <article class="exercise-card zoom-in">
+            <img src="media/seatedrow.jpg"
+                alt="Seated row exercise demonstration">
+
+            <h3>Seated Row</h3>
+
+            <p><strong>Target:</strong> Middle back</p>
+
+            <p>
+                <strong>How to do it:</strong>
+                Pull the handle toward your stomach while squeezing your shoulder blades together.
+            </p>
+
+            <p>
+                <strong>Tips:</strong>
+                Keep your chest up and avoid rounding your shoulders.
+            </p>
+        </article>
+
+        <article class="exercise-card zoom-in">
+            <img src="media/facepull.jpg"
+                alt="Face pull exercise demonstration">
+
+            <h3>Face Pull</h3>
+
+            <p><strong>Target:</strong> Upper back and rear delts</p>
+
+            <p>
+                <strong>How to do it:</strong>
+                Pull the rope attachment toward your face while keeping elbows high.
+            </p>
+
+            <p>
+                <strong>Tips:</strong>
+                Focus on controlled movement and squeezing the upper back.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+<div id="settingsPopup" class="settings-popup hidden">
+    <div class="settings-content zoom-in">
+
+        <h2>Settings</h2>
+
+        <h3>Text-to-Speech</h3>
+
+        <button class="tts-btn"
+                onclick="speakText('Text to speech is active.')">
+            🔊 Test TTS
+        </button>
+
+        <label for="ttsRate">Speech Speed</label>
+
+        <input
+            type="range"
+            id="ttsRate"
+            min="0.5"
+            max="2"
+            step="0.1"
+            value="1"
+        >
+
+        <label for="ttsPitch">Speech Pitch</label>
+
+        <input
+            type="range"
+            id="ttsPitch"
+            min="0"
+            max="2"
+            step="0.1"
+            value="1"
+        >
+
+        <button class="tts-btn" onclick="readPage()">
+            📄 Read Entire Page
+        </button>
+
+        <h3>Display Settings</h3>
+
+        <button class="tts-btn" onclick="toggleDarkMode()">
+            🌙 Toggle Dark Mode
+        </button>
+
+        <h3>Translate Page</h3>
+
+        <div id="google_translate_element"></div>
+
+        <h3>Future Settings</h3>
+
+        <p>More features coming soon...</p>
+
+        <button id="closeSettings" class="close-btn">
+            Close
+        </button>
+
+    </div>
+</div>
+
+<footer class="fade-in">
+    <p>© 2026 Love Fitness — All Rights Reserved</p>
+
+    <p class="legal-note">
+        This website provides general fitness information and is not medical advice.
+    </p>
+
+    <div class="footer-links">
+        <a href="termsofuse.html">Terms of Use</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+</footer>
+
+</body>
+</html>

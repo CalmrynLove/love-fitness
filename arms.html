@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Fitness - Arm Workouts</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+<header class="fade-in">
+    <img src="media/logo.png" alt="Love Fitness Logo" class="logo">
+
+    <h1>Arm Workouts</h1>
+    <p>Build stronger biceps and triceps.</p>
+
+    <button id="settingsBtn" class="settings-btn">
+        ⚙ Settings
+    </button>
+</header>
+
+<nav aria-label="Main Navigation" class="fade-in">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="abs.html">Abs</a></li>
+        <li><a href="back.html">Back</a></li>
+        <li><a href="legs.html">Legs</a></li>
+        <li><a href="arms.html">Arms</a></li>
+        <li><a href="chest.html">Chest</a></li>
+        <li><a href="products.html">Products</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section class="muscle-description fade-in">
+    <h2>What are Your Arm Muscles?</h2>
+
+    <p>
+        The arms are made up primarily of the biceps and triceps. These muscles
+        help you lift, pull, push, and carry objects throughout daily life.
+        Strong arms improve upper-body strength, athletic performance, and help
+        support many compound exercises such as rows, pull-ups, and bench press.
+    </p>
+</section>
+
+<section class="exercise-section slide-up">
+
+    <h2>Arm Exercises</h2>
+
+    <p>
+        These exercises focus on building stronger, more defined biceps and triceps.
+    </p>
+
+    <div class="grid">
+
+        <article class="exercise-card zoom-in">
+            <img src="media/bicepcurl.jpg"
+                alt="Bicep curl exercise demonstration">
+
+            <h3>Bicep Curl</h3>
+
+            <p><strong>Target:</strong> Biceps</p>
+
+            <p>
+                <strong>How to do it:</strong>
+                Curl the weight upward while keeping your elbows close to your body.
+            </p>
+
+            <p>
+                <strong>Tips:</strong>
+                Avoid swinging and control the weight throughout the movement.
+            </p>
+        </article>
+
+        <article class="exercise-card zoom-in">
+            <img src="media/hammercurl.jpg"
+                alt="Hammer curl exercise demonstration">
+
+            <h3>Hammer Curl</h3>
+
+            <p><strong>Target:</strong> Biceps and forearms</p>
+
+            <p>
+                <strong>How to do it:</strong>
+                Curl the dumbbells while keeping your palms facing each other.
+            </p>
+
+            <p>
+                <strong>Tips:</strong>
+                Maintain a controlled tempo and avoid using momentum.
+            </p>
+        </article>
+
+        <article class="exercise-card zoom-in">
+            <img src="media/triceppushdowns.jpg"
+                alt="Tricep pushdown exercise demonstration">
+
+            <h3>Tricep Pushdown</h3>
+
+            <p><strong>Target:</strong> Triceps</p>
+
+            <p>
+                <strong>How to do it:</strong>
+                Push the cable downward until your arms are fully extended.
+            </p>
+
+            <p>
+                <strong>Tips:</strong>
+                Keep your elbows tucked close to your sides.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+<div id="settingsPopup" class="settings-popup hidden">
+    <div class="settings-content zoom-in">
+
+        <h2>Settings</h2>
+
+        <h3>Text-to-Speech</h3>
+
+        <button class="tts-btn"
+                onclick="speakText('Text to speech is active.')">
+            🔊 Test TTS
+        </button>
+
+        <label for="ttsRate">Speech Speed</label>
+
+        <input
+            type="range"
+            id="ttsRate"
+            min="0.5"
+            max="2"
+            step="0.1"
+            value="1"
+        >
+
+        <label for="ttsPitch">Speech Pitch</label>
+
+        <input
+            type="range"
+            id="ttsPitch"
+            min="0"
+            max="2"
+            step="0.1"
+            value="1"
+        >
+
+        <button class="tts-btn" onclick="readPage()">
+            📄 Read Entire Page
+        </button>
+
+        <h3>Display Settings</h3>
+
+        <button class="tts-btn" onclick="toggleDarkMode()">
+            🌙 Toggle Dark Mode
+        </button>
+
+        <h3>Translate Page</h3>
+
+        <div id="google_translate_element"></div>
+
+        <h3>Future Settings</h3>
+
+        <p>More features coming soon...</p>
+
+        <button id="closeSettings" class="close-btn">
+            Close
+        </button>
+
+    </div>
+</div>
+
+<footer class="fade-in">
+    <p>© 2026 Love Fitness — All Rights Reserved</p>
+
+    <p class="legal-note">
+        This website provides general fitness information and is not medical advice.
+    </p>
+
+    <div class="footer-links">
+        <a href="termsofuse.html">Terms of Use</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+</footer>
+
+</body>
+</html>
