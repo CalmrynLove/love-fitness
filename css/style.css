@@ -1,1 +1,408 @@
+body {
+    background: #111;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
 
+/* HEADER */
+header {
+    background: #222;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    color: #eee;
+    padding: 25px;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+.settings-btn {
+    background: #333;
+    border: none;
+    border-radius: 6px;
+    color: #eee;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    margin-top: -40px;
+    padding: 8px 16px;
+}
+
+/* NAVIGATION */
+nav ul {
+    background: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #eee;
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #333;
+}
+
+/* HERO */
+.hero {
+    align-items: center;
+    background: url("../media/hero.jpg") center/cover no-repeat;
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(2px);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    color: #eee;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.cta {
+    background: #444;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 14px 30px;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #666;
+    transform: scale(1.08);
+}
+
+.tts-btn {
+    background: #333;
+    border: none;
+    border-radius: 6px;
+    color: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.tts-btn:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+/* GRID + CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* MOBILE FIRST */
+    gap: 20px;
+    padding: 20px;
+}
+
+.card,
+.exercise-card {
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card:hover,
+.exercise-card:hover {
+    box-shadow: 0 8px 20px rgba(255,255,255,0.1);
+    transform: translateY(-5px);
+}
+
+/* IMAGES */
+.exercise-card img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.categories .card img {
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* SETTINGS POPUP */
+.settings-popup {
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.settings-content {
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+    max-width: 400px;
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+}
+
+.close-btn {
+    background: #444;
+    border: none;
+    border-radius: 6px;
+    color: #eee;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.close-btn:hover {
+    background: #666;
+}
+
+/* UTILITY */
+.hidden {
+    display: none;
+}
+
+.dark {
+    background: #000;
+    color: #eee;
+}
+
+/* FEATURED EXERCISE */
+.featured-exercise {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-exercise .card img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* BEGINNER TIPS */
+.beginner-tips {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.beginner-tips ul {
+    list-style: none;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 0;
+}
+
+.beginner-tips li {
+    background: #222;
+    border-radius: 6px;
+    color: #eee;
+    margin-bottom: 10px;
+    padding: 12px;
+}
+
+/* PRODUCTS PREVIEW */
+.products-preview {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.products-preview img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* GOOGLE TRANSLATE */
+#google_translate_element {
+    margin-top: 10px;
+}
+
+.goog-te-gadget {
+    color: #eee !important;
+    font-size: 14px !important;
+}
+
+.goog-te-gadget select {
+    background: #333 !important;
+    border: none !important;
+    border-radius: 6px !important;
+    color: #eee !important;
+    padding: 6px !important;
+}
+
+/* FOOTER */
+footer {
+    color: #eee;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #eee;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.8s ease forwards;
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.95);
+    animation: zoomIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        height: 75vh;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.4rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav a {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .card,
+    .exercise-card {
+        padding: 15px;
+    }
+}
+
+section h2 {
+    padding: 20px 20px 10px;
+    text-align: center;
+}
+
+section p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.muscle-description,
+.exercise-section,
+.why-love-fitness,
+.interactive {
+    padding: 20px;
+}
+
+.card a {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+}
